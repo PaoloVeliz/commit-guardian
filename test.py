@@ -1,2 +1,1 @@
-password="dklfsdfkljxzczcxzcsdlk"
-print("test")
+password="hunter2"
