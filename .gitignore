@@ -1,0 +1,44 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+env/
+venv/
+ENV/
+.Python
+
+# Pre-commit cache
+.pre-commit-config.yaml~
+.pre-commit/
+
+# VS Code & IDE configs
+.vscode/
+.idea/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Logs & temp
+*.log
+*.tmp
+*.swp
+*.bak
+
+# Python testing
+.coverage
+.tox/
+nosetests.xml
+coverage.xml
+*.cover
+
+# Python packaging
+build/
+dist/
+*.egg-info/
+
+# Secret config (optional)
+config/default.json

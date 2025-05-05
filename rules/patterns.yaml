@@ -1,0 +1,13 @@
+secrets:
+  - "(?i)(password|passwd|secret|token|key|apikey)\\s*=\\s*[\"'].*[\"']"
+  - "(?i)(AWS|GCP|AZURE)?_?(SECRET|KEY|TOKEN)\\s*=\\s*[\"'].*[\"']"
+  - "(?i)(DB|DATABASE)_?(USER|PASS|PWD)\\s*=\\s*[\"'].*[\"']"
+
+staging_block:
+  - "(?i)(print|console\\.log|logger\\.debug)\\("
+
+prod_block:
+  - "DEBUG\\s*=\\s*True"
+  - "(?i)ALLOWED_HOSTS\\s*=\\s*\\[\"\\*\"\\]"
+  - "ENV\\s*=\\s*[\"'](dev|development)[\"']"
+  - "(?i)(print|console\\.log|logger\\.debug)\\("

@@ -1,0 +1,8 @@
+repos:
+  - repo: local
+    hooks:
+      - id: commit-guardian
+        name: Commit Guardian – Security Scanner
+        entry: python3 ./hooks/pre-commit.py
+        language: system
+        types_or: [file]
